@@ -1,0 +1,12 @@
+service: github-actions
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev
+  region: us-west-1
+
+functions:
+  hello:
+    handler: src/handler.generateRandomNumber
+
